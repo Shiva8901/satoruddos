@@ -10,7 +10,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 ])
 logger = logging.getLogger(__name__)
 
-bot = telebot.TeleBot("7241214892:AAHA1-e8PcnlriU5kSx2Ohz4bjXz6cCoNpo")
+bot = telebot.TeleBot("7340691040:AAHXsUlPYYj8WJm8bBTTH0b3HMcx_qxIQMM")
 DEFAULT_THREADS = 200
 active_processes = {}
 invalid_ports = {8700, 20000, 443, 17500, 9031, 20002, 20001}
