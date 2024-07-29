@@ -3,7 +3,7 @@ name: aptible
 on:
   push:
     branches: [main]
-  workflow_dispatch: {}
+  workflow_dispatch:
 
 jobs:
   deploy:
@@ -18,5 +18,5 @@ jobs:
         type: git
         app: ddos
         environment: aanavj-13
-        username: ${{ "nokepev354@fuzitea.com" }}
-        password: ${{ "Anokepev354@fuzitea.com" }}
+        username: nokepev354@fuzitea.com
+        password: Anokepev354@fuzitea.com
