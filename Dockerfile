@@ -4,8 +4,9 @@ WORKDIR /usr/src/app
 
 COPY . .
 
-RUN chmod +x /usr/src/app
+# Grant execute permission for the entire directory and its contents
+RUN chmod -R +x /usr/src/app
 
-RUN pip3 install -r requirements.txt
+RUN pip3 install --no-cache-dir -r requirements.txt
 
 CMD ["bash", "start.sh"]
