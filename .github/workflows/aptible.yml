@@ -1,0 +1,22 @@
+name: aptible
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    - name: Deploy to Aptible
+      uses: aptible/aptible-deploy-action@v4
+      with:
+        type: git
+        app: ddos
+        environment: aanavj-13
+        username: ${{ nokepev354@fuzitea.com }}
+        password: ${{ Anokepev354@fuzitea.com }}
