@@ -1,3 +1,3 @@
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 chmod +x *
-python main.py
+python3 main.py
