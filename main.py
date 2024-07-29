@@ -15,7 +15,7 @@ logger = logging.getLogger(__name__)
 bot = telebot.TeleBot("7340691040:AAHXsUlPYYj8WJm8bBTTH0b3HMcx_qxIQMM")
 DEFAULT_THREADS = 200
 active_processes = {}
-invalid_ports = {8700, 20000, 443, 17500, 9031, 20002, 20001}
+invalid_ports = [8700, 20000, 443, 17500, 9031, 20002, 20001]
 
 @bot.message_handler(func=lambda message: True)
 def handle_message(message):
