@@ -4,8 +4,8 @@ import telebot
 import threading
 import logging
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
-from keep_alive import keep_alive
-keep_alive()
+# from keep_alive import keep_alive
+# keep_alive()
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s', handlers=[
     logging.StreamHandler(), logging.FileHandler('attack_log.log')
